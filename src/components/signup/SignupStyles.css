@@ -1,0 +1,73 @@
+.signup{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: rgba(0, 0, 0, .5);
+}
+
+.signup:before {
+    content: '';
+    position: absolute;
+    background: url('../../assets/secfour.jpg') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.signup h1{
+    color: white;
+}
+.signup p{
+    color: white;
+}
+.signup .container .form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.signup form {
+    padding: 1rem;
+    width: 50%;
+    margin: 1rem;
+    background: rgba(0, 0, 0, 0.743);
+}
+
+.signup .form-container div{
+    display: flex;
+    flex-direction: column;
+}
+
+.signup form label {
+    margin: 2rem 0 .7rem 0;
+    display: none;
+}
+
+.signup form input {
+    padding: .5rem;
+    font-size: 1.2rem;
+    color: white;
+    margin: 1rem 0;
+    font-family: 'Roboto', sans-serif;
+    background: rgba(0, 0, 0, .15);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, .37);
+    backdrop-filter: blur(4px);
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, .15);
+}
+
+.signup form input:focus {
+    outline: var(--primary-color);
+    box-shadow: 0 0 12px 0 var(--primary-color);
+}
+
+.error{
+    color: red;
+}
+
+@media screen and (max-width: 940px){
+    .signup form  input{
+        width: 100%;
+    }
+}
